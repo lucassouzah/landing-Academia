@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+
+
+html {
+    width: 100vw;
+    height: 100vh;
+    font-size: 62.5%;
+    color: white;
+    font-family: 'Catamaran', sans-serif;
+}
+
+body {
+    background: linear-gradient(rgba(17, 17, 17, 0.3), rgba(20, 20, 20, 1)), url(../imgs/acad2.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+}
+
+
+
+header {
+    width: 100%;
+    height: 7vh;
+    background-color: rgba(22, 22, 22, 0.2);
+}
+
+.menu-content {
+    text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.8rem;
+}
+
+.logo {
+    font-size: 1.8rem;
+    letter-spacing: 0.4rem;
+    cursor: pointer;
+}
+
+.menu-content .list-itens {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+.menu-content .list-itens a {
+    text-decoration: none;
+    color: white;
+    padding: 1.5rem;
+    transform: 2ms ease-in;
+    position: relative;
+}
+
+
+.menu-content .list-itens a:before {
+    content: ' ';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 1px;
+    background-color: rgb(236, 78, 91);
+    transition: all 1.5s ease; 
+}
+
+.menu-content .list-itens a:hover:before {
+    width: 100%;
+}
+
+
+
+main {
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.titulo {
+    width: 850px;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.subtitulo {
+    margin-bottom: 7rem;
+    font-size: 2rem;
+    color: rgb(165, 165, 165);
+    text-transform: uppercase;
+}
+
+
+
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.buttons button {
+    width: 250px;
+    height: 60px;
+    cursor: pointer;
+    border: 1px solid white;
+    color: white;
+    text-transform: uppercase;
+    background-color: transparent;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    border-radius: 20px;
+    position: relative;
+    transition: 1.5s;
+}
+
+.buttons button:hover {
+    color: rgb(236, 78, 91);
+    border: none;
+}
+
+.buttons button:before {
+    content: ' ';
+    border-radius: 20px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 0;
+    height: 60px;
+    background-color: rgb(61, 61, 61);
+    z-index: -1;
+    transition: 1s;
+}
+
+.buttons button:hover:before {
+    width: 100%;
+}
+
